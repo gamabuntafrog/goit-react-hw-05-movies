@@ -413,7 +413,7 @@ body {
   }
 
   .title-name {
-    font-size: 60px;
+    /* font-size: 60px; */
   }
   .overview {
     width: 95%;
@@ -421,9 +421,16 @@ body {
   }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (min-width: 340px) and (max-width: 580px) {
+  .title-name {
+    font-size: 30px;
+  }
 }
-
+@media screen and (min-width: 581px) and (max-width: 1280px) {
+  .title-name {
+    font-size: 60px;
+  }
+}
 .home-title {
   text-align: center;
   margin: 20px 0;
