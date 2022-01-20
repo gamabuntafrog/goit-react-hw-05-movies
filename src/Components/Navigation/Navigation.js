@@ -5,8 +5,24 @@ const Navigation = () => {
 
   return (
     <nav className="nav">
-      <Route path="/movies/:movieId">
-        <button className="nav__link nav__go-back" onClick={() => goBack()}>
+      <Route exact path="/movies/:movieId">
+        <button
+          className="nav__link nav__go-back"
+          onClick={() => {
+            goBack();
+          }}
+        >
+          Go back
+        </button>
+      </Route>
+      <Route exact path="/movies/:movieId/:more">
+        <button
+          className="nav__link nav__go-back"
+          onClick={() => {
+            goBack();
+            goBack();
+          }}
+        >
           Go back
         </button>
       </Route>
